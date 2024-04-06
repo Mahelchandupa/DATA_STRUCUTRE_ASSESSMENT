@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexPredict.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Index Predictor</title>
+   
+  </head>
+  <body>
+    <div id="overlay">
+      <a href="console.html" id="back-btn">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </a>
+      <div class="start">
+        <h1>Index Predictor</h1>
+        <div class="start-btn">Start Game</div>
+      </div>
+      <div class="main-container">
+        <div class="container-1">
+          <h3>Predict the Index Of ther Random Number</h3>
+          <p id="ranodmNmu"></p>
+          <div class="options-container"></div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-1">
+            <canvas id="myChart" style="width: 100%; max-width: 500px"></canvas>
+            <canvas id="myChart1" style="width: 100%; max-width: 500px"></canvas>
+          </div>
+          <canvas id="algorithmChart" style="width: 100%; max-width: 500px"
+        ></canvas>
+        </div>
+      </div>
+      <button class="restart-btn">Restart</button>
+    </div>
+
+    <div id="dialog-box">
+      <div class="dialog-content">
+        <h2>Your Prediction is Correct!</h2>
+        <p>Please enter your name:</p>
+        <input type="text" id="username" />
+        <button onclick="submitName()">Submit</button>
+      </div>
+    </div>
+<!-- 
+    <div id="wrong-dialog-box">
+      <div class="wrong-dialog-content">
+        <p id="close-btn" onclick="">X</p>
+        <h2>Your Prediction is Wrong!</h2>
+        <p></p>
+      </div>
+    </div> -->
+
+    <script src="indexPredict.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </body>
+</html>

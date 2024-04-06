@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eight Queens Puzzle Game</title>
+    <style>
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 70px);
+            grid-gap: 1px;
+        }
+        .chessboard button {
+            width: 70px;
+            height: 70px;
+            font-size: 32px;
+        }
+        .title-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 560px;
+        }
+        .input-div {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 560px;
+        }
+        input[type="text"], button {
+            font-size: 16px;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        button {
+            cursor: pointer;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title-div">
+    <h2>Eight Queens Puzzle Game</h2>
+</div>
+
+<div class="input-div">
+    <input type="text" id="username" placeholder="Enter your username" />
+
+    <button id="resetButton">Reset Game</button>
+
+</div>
+<div id="chessboard" class="chessboard"></div>
+<script src="eight-queens.js"></script>
+</body>
+</html>

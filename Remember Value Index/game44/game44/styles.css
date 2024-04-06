@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.title{
+    text-align: center;
+}
+
+#startGameBtn{
+
+    padding: 8px;
+    background:rgb(58, 58, 58);
+    font-weight: bold;
+    width: 15%;
+    color: white;
+    transition: all .5s;
+}
+
+#startGameBtn:hover{
+   background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+#myChart{
+ margin: auto;
+ margin-top: 50px;
+}
+
+#gameOutput {
+    margin-top: 20px;
+    text-align: center;
+}

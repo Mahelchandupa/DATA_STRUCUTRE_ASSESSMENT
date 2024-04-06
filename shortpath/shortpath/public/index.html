@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortest Path Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #gameCanvas {
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        .game-info, .game-controls {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #guessSection{
+            display: none;
+        }
+        #usernameInput{
+            height: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+        #usernameSubmit{
+            height: 32px;
+
+        }
+        #distanceGuess{
+            height: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+        #submitGuess{
+            height: 32px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="game-info">
+    <h2>Guess the Distance</h2>
+    <p id="gameInstruction">Click on a city to select it.</p>
+    <p id="selectedCityInfo"></p>
+</div>
+<canvas id="gameCanvas" width="1200" height="600"></canvas>
+<div id="usernameSection">
+    <input type="text" id="usernameInput" placeholder="Enter your name" />
+    <button id="usernameSubmit">Start Game</button>
+</div>
+<div id="guessSection">
+    <input type="number" id="distanceGuess" placeholder="Enter your distance guess">
+    <button id="submitGuess">Submit Guess</button>
+</div>
+<div id="feedback"></div>
+<script src="game.js"></script>
+</body>
+</html>

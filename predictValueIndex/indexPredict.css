@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("assesst/d424fd80-fd8a-4143-a272-1241e9a04079.jpeg");
+  background-size: contain;
+  background-position: center;
+}
+#overlay {
+  position: fixed;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.9
+  );
+  z-index: 2; 
+  padding: 40px;
+}
+.container-1 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.container-1 h3 {
+  color: aqua;
+  font-size: 25px;
+  text-align: center;
+}
+.container-1 p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.options-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.options-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  align-items: center;
+}
+.start {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.start-btn {
+  background-color: greenyellow;
+  color: rgb(51, 49, 49);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+h1 {
+  color: rgb(43, 220, 226);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+
+}
+#dialog-box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 200;
+}
+
+.dialog-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content h2 {
+  margin-bottom: 10px;
+}
+
+.dialog-content p {
+  margin-bottom: 20px;
+}
+
+.dialog-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.dialog-content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialog-content button:hover {
+  background-color: #0056b3;
+}
+
+.main-container {
+  align-items: center;
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+  gap: 60px;
+}
+.chart-1 {
+  display: flex;
+  gap: 100px;
+}
+.restart-btn {
+  display: none;
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+  border: none;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.restart-btn:hover {
+  background-color: #fff;
+  color:#0056b3;
+  font-weight: 500;
+  border: 1px solid #0056b3;
+}
+#back-btn {
+  position: absolute;
+  left: 70px;
+  top: 70px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+#back-btn:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+/* 
+#wrong-dialog-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 200;
+  }
+  .wrong-dialog-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .wrong-dialog-content #close-btn {
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+  } */

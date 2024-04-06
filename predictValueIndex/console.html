@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gaming Console</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-image: url("assesst/AI_Generated_Image_2024-04-05_449986480012201.png");
+        background-size: contain;
+        background-position: center;
+      }
+      #overlay {
+        position: fixed; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        padding: 40px;
+      }
+      h1 {
+        font-size: 50px;
+        position: absolute;
+        right: 70px;
+        color: white;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .top-line,
+      .bottom-line {
+        width: 4px;
+        height: 80px;
+        background-color: #fff;
+        margin-left: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .game-link {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 250px;
+      }
+      .game-link a {
+        font-size: 20px;
+        color: #fff;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .game-link a:hover {
+        color: #b2ec07;
+      }
+      h2 {
+        font-size: 20px;
+        position: absolute;
+        left: 70px;
+        bottom: 70px;
+        color: #c5c5c5;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+      }
+      /* Your existing CSS styles */
+      /* Add styles for the custom dialog box */
+      /* #dialog-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 200;
+      }
+
+      .dialog-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .dialog-content h2 {
+        margin-bottom: 10px;
+      }
+
+      .dialog-content p {
+        margin-bottom: 20px;
+      }
+
+      .dialog-content input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .dialog-content button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .dialog-content button:hover {
+        background-color: #0056b3;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="overlay">
+      <h1>Gaming Console</h1>
+      <div class="container">
+        <div class="top-line"></div>
+        <div class="game-link">
+          <a href="">Eight Queens’ Puzzle</a>
+          <a href="">Tic-Tac-Toe</a>
+          <a href="">Identify Shortest Path </a>
+          <a href="">Remember the Value Index </a>
+          <a href="indexPredict.html">Index Predictor</a>
+        </div>
+        <span class="bottom-line"></span>
+      </div>
+      <h2>Data Strucures & Algorithms</h2>
+
+      <!-- <div id="dialog-box">
+        <div class="dialog-content">
+          <h2>Welcome to the Gaming Console!</h2>
+          <p>Please enter your name:</p>
+          <input type="text" id="username" />
+          <button onclick="submitName()">Submit</button>
+        </div>
+      </div> -->
+    </div>
+  </body>
+
+  <script>
+    const links = document.querySelectorAll(".game-link a");
+    const topLine = document.querySelector(".top-line");
+    const bottomLine = document.querySelector(".bottom-line");
+
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        topLine.style.backgroundColor = "#ecaf07";
+        bottomLine.style.backgroundColor = "#ecaf07";
+      });
+
+      link.addEventListener("mouseleave", () => {
+        topLine.style.backgroundColor = "#fff";
+        bottomLine.style.backgroundColor = "#fff";
+      });
+    });
+
+    // function submitName() {
+    //   const username = document.getElementById("username").value;
+    //   if (username.trim() !== "") {
+    //     alert(`Welcome, ${username}!`);
+    //     document.getElementById("dialog-box").style.display = "none";
+    //   } else {
+    //     alert("Please enter a valid username!");
+    //   }
+    // }
+  </script>
+</html>
